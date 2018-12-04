@@ -30,7 +30,7 @@ public class StudentServiceImpl implements StudentService {
 
 	@Transactional
 	@Override
-	@Cacheable(value="realTimeCache", key="'findStudentsByName_'+#name")
+	@Cacheable("realTimeCache")
 	public List<Student> findStudentsByName(String name) {
 //		String key = "findStudentsByName_"+name;
 //		BoundValueOperations<Object, Object> ops = redisTemplate.boundValueOps(key);
@@ -57,7 +57,7 @@ public class StudentServiceImpl implements StudentService {
 
 	@Transactional
 	@Override
-	@Cacheable(value="unRealTimeCache", key="'findAllStudentsCount'")
+	@Cacheable("unRealTimeCache")
 	public Integer findAllStudentsCount() {
 
 //		ValueOperations<Object, Object> ops = redisTemplate.opsForValue();
