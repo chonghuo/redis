@@ -31,7 +31,7 @@ public class MyTest {
 
     @Test
     public void test01() {
-        List<Student> students = service.findStudentsByName("张");
+        List<Student> students = service.findStudentsByName("李");
         for (Student student : students) {
             System.out.println(student);
         }
@@ -47,7 +47,7 @@ public class MyTest {
     public void test03(){
         Student s = new Student();
             s.setAge(25);
-            s.setName("李凤");
+            s.setName("高高");
             service.saveStudent(s);
     }
 

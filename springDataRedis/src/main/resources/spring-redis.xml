@@ -34,27 +34,27 @@
 	    <!-- <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig.JedisPoolConfig"/> -->
 	
 	<!-- 注册缓存注解驱动 -->
-	<!--<cache:annotation-driven cache-manager="cacheManager"/>-->
+	<cache:annotation-driven cache-manager="cacheManager"/>
 	
 	<!-- 注册缓存管理器 -->
-	<!--<bean id="cacheManager" class="org.springframework.data.redis.cache.RedisCacheManager">-->
-		<!--&lt;!&ndash; 构造注入Redis操作对象，即Redis模板 &ndash;&gt;-->
-		<!--<constructor-arg ref="redisTemplate"/>-->
-		<!--&lt;!&ndash; 设置缓存区域名称 &ndash;&gt;-->
-		<!--<property name="cacheNames">-->
-			<!--<list>-->
-				<!--<value>realTimeCache</value>-->
-				<!--<value>unRrealTimeCache</value>-->
-			<!--</list>-->
-		<!--</property>-->
-		<!--&lt;!&ndash; 为指定缓存区域设置生存时限，单位秒 &ndash;&gt;-->
-		<!--<property name="expires">-->
-			<!--<map>-->
-				<!--&lt;!&ndash; 为unRrealTimeCache缓存区域中的key设置的生存时限为50秒 &ndash;&gt;-->
-				<!--<entry key="unRrealTimeCache" value="50"/>-->
-			<!--</map>-->
-		<!--</property>-->
-	<!--</bean>-->
+	<bean id="cacheManager" class="org.springframework.data.redis.cache.RedisCacheManager">
+		<!-- 构造注入Redis操作对象，即Redis模板 -->
+		<constructor-arg ref="redisTemplate"/>
+		<!-- 设置缓存区域名称 -->
+		<property name="cacheNames">
+			<list>
+				<value>realTimeCache</value>
+				<value>unRealTimeCache</value>
+			</list>
+		</property>
+		<!-- 为指定缓存区域设置生存时限，单位秒 -->
+		<property name="expires">
+			<map>
+				<!-- 为unRealTimeCache缓存区域中的key设置的生存时限为50秒 -->
+				<entry key="unRealTimeCache" value="50"/>
+			</map>
+		</property>
+	</bean>
 	
 </beans>
 
