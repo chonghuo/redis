@@ -12,6 +12,8 @@ public interface StudentService {
 	Integer findAllStudentsCount();
 	
 	void saveStudent(Student student);
+
+	Integer findAllStudentsCountByOldType();
 	
 	
 }

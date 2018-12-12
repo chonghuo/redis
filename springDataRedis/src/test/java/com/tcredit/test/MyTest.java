@@ -9,6 +9,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import redis.clients.jedis.Jedis;
 
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Auther: chong.huo
@@ -51,10 +54,60 @@ public class MyTest {
             service.saveStudent(s);
     }
 
+
+    //模拟高并发情景
     @Test
     public void test04(){
-        Jedis jedis = new Jedis("192.168.1.107",6379);
+            // 定义任务：查询学生总人数
+            Runnable task = new Runnable() {
+                @Override
+                public void run() {
+                    service.findAllStudentsCount();
+                }
+            };
+        //创建一个线程池。池内默认有二十个线程
+        ExecutorService threadPool = Executors.newFixedThreadPool(20);
 
-        System.out.println(jedis.get("city"));
+        //模拟1000个并发访问，然后将这1000个并发访问请求交给这20个线程处理
+        for (int i = 0 ; i <1000;i++){
+            //为线程池中的线程对象提交所要执行的任务
+            threadPool.submit(task);
+
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+
+    }
+
+
+    @Test
+    public void test05(){
+        // 定义任务：查询学生总人数
+        Runnable task = new Runnable() {
+            @Override
+            public void run() {
+                service.findAllStudentsCountByOldType();
+            }
+        };
+        //创建一个线程池。池内默认有二十个线程
+        ExecutorService threadPool = Executors.newFixedThreadPool(20);
+
+        //模拟1000个并发访问，然后将这1000个并发访问请求交给这20个线程处理
+        for (int i = 0 ; i <1000;i++){
+            //为线程池中的线程对象提交所要执行的任务
+            threadPool.submit(task);
+
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
+
     }
 }

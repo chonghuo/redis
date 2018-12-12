@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="jar://$USER_HOME$/maven/mavenLib/org/springframework/data/spring-data-redis/1.8.6.RELEASE/spring-data-redis-1.8.6.RELEASE.jar!/org/springframework/data/redis/connection/jedis/JedisConnectionFactory.class" line="48" mnemonic="7" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3fe79b26-7e43-4e07-9243-878a980d0f26" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -59,37 +62,38 @@
     <session id="-779518475">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="1" />
+          <entry key="class" value="7" />
+          <entry key="java" value="4" />
           <entry key="properties" value="1" />
-          <entry key="xml" value="3" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="1" />
+          <entry key="CLASS" value="7" />
+          <entry key="JAVA" value="4" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="3" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="302" />
-          <entry key="xml" value="40" />
+          <entry key="java" value="719" />
+          <entry key="xml" value="270" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="302" />
-          <entry key="XML" value="40" />
+          <entry key="JAVA" value="719" />
+          <entry key="XML" value="270" />
         </counts>
       </usages-collector>
     </session>
@@ -99,32 +103,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/tcredit/test/MyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tcredit/service/StudentServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tcredit/cache/RedisCacheConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="246">
+              <caret line="35" column="19" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -132,17 +112,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/spring-redis.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+            <state relative-caret-position="354">
+              <caret line="64" column="11" lean-forward="true" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-service.xml">
+        <entry file="jar://$USER_HOME$/maven/mavenLib/org/springframework/data/spring-data-redis/1.8.6.RELEASE/spring-data-redis-1.8.6.RELEASE.jar!/org/springframework/data/redis/connection/RedisNode.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+            <state relative-caret-position="15">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tcredit/service/StudentServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -175,14 +167,14 @@
         <option value="$PROJECT_DIR$/src/main/resources/spring-service.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-tx.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tcredit/bean/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tcredit/service/StudentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tcredit/dao/StudentDao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/com/tcredit/test/MyTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tcredit/cache/RedisCacheConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tcredit/service/StudentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tcredit/service/StudentService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tcredit/test/MyTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-redis.xml" />
       </list>
     </option>
@@ -225,10 +217,10 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="36" />
-    <option name="y" value="23" />
-    <option name="width" value="1394" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="72" />
+    <option name="y" value="56" />
+    <option name="width" value="1402" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectView">
@@ -236,8 +228,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,16 +274,33 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="springDataRedis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springDataRedis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springDataRedis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springDataRedis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543901089060" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544607775484" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -320,20 +327,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.test02">
-    <configuration name="AL18_TestString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.tcredit.AL18_TestString" />
-      <module name="springDataRedis" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tcredit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MyTest.test01">
     <configuration name="MyTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springDataRedis" />
       <extension name="coverage">
@@ -398,20 +392,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyTest.test05" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tcredit.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tcredit.test" />
+      <option name="MAIN_CLASS_NAME" value="com.tcredit.test.MyTest" />
+      <option name="METHOD_NAME" value="test05" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.AL18_TestString" />
       <item itemvalue="JUnit.MyTest.test01" />
       <item itemvalue="JUnit.MyTest.test02" />
       <item itemvalue="JUnit.MyTest.test03" />
       <item itemvalue="JUnit.MyTest.test04" />
+      <item itemvalue="JUnit.MyTest.test05" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyTest.test02" />
         <item itemvalue="JUnit.MyTest.test01" />
-        <item itemvalue="JUnit.MyTest.test03" />
         <item itemvalue="JUnit.MyTest.test04" />
-        <item itemvalue="Application.AL18_TestString" />
+        <item itemvalue="JUnit.MyTest.test05" />
+        <item itemvalue="JUnit.MyTest.test02" />
+        <item itemvalue="JUnit.MyTest.test03" />
       </list>
     </recent_temporary>
   </component>
@@ -432,51 +442,53 @@
       <workItem from="1543541460220" duration="43000" />
       <workItem from="1543555126138" duration="12239000" />
       <workItem from="1543657725996" duration="3103000" />
-      <workItem from="1543898074761" duration="2299000" />
+      <workItem from="1543898074761" duration="2498000" />
+      <workItem from="1543987494470" duration="3018000" />
+      <workItem from="1544593265449" duration="2607000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyTest_test01 - 2018.12.01 at 21h 43m 59s.xml">
-      <configuration name="MyTest.test01" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_test02 - 2018.12.01 at 21h 45m 23s.xml">
-      <configuration name="MyTest.test02" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_test03 - 2018.12.01 at 21h 45m 55s.xml">
-      <configuration name="MyTest.test03" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_test02 - 2018.12.01 at 21h 46m 15s.xml">
-      <configuration name="MyTest.test02" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_test01 - 2018.12.04 at 13h 07m 20s.xml">
-      <configuration name="MyTest.test01" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_test01 - 2018.12.04 at 13h 09m 43s.xml">
-      <configuration name="MyTest.test01" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_test01 - 2018.12.04 at 13h 10m 01s.xml">
-      <configuration name="MyTest.test01" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_test01 - 2018.12.04 at 13h 11m 13s.xml">
-      <configuration name="MyTest.test01" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MyTest_test02 - 2018.12.04 at 13h 16m 12s.xml">
       <configuration name="MyTest.test02" configurationId="JUnit" />
     </history-entry>
     <history-entry file="MyTest_test02 - 2018.12.04 at 13h 16m 31s.xml">
       <configuration name="MyTest.test02" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MyTest_test04 - 2018.12.05 at 18h 43m 57s.xml">
+      <configuration name="MyTest.test04" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test05 - 2018.12.05 at 20h 08m 49s.xml">
+      <configuration name="MyTest.test05" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test04 - 2018.12.05 at 20h 09m 58s.xml">
+      <configuration name="MyTest.test04" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test01 - 2018.12.12 at 14h 00m 49s.xml">
+      <configuration name="MyTest.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test01 - 2018.12.12 at 17h 22m 23s.xml">
+      <configuration name="MyTest.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test01 - 2018.12.12 at 17h 23m 59s.xml">
+      <configuration name="MyTest.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test01 - 2018.12.12 at 17h 42m 45s.xml">
+      <configuration name="MyTest.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyTest_test01 - 2018.12.12 at 17h 43m 05s.xml">
+      <configuration name="MyTest.test01" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35977000" />
+    <option name="totallyTimeSpent" value="41801000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="72" y="56" width="1402" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49787235" visible="true" weight="0.24177396" />
-      <window_info id="Structure" order="1" sideWeight="0.50212765" side_tool="true" weight="0.24184783" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4968153" visible="true" weight="0.3382353" />
+      <window_info id="Structure" order="1" sideWeight="0.50318474" side_tool="true" visible="true" weight="0.3382353" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -485,7 +497,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32992327" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3987952" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3987261" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -619,13 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/maven/mavenLib/org/springframework/data/spring-data-redis/1.8.6.RELEASE/spring-data-redis-1.8.6.RELEASE.jar!/org/springframework/data/redis/connection/jedis/JedisConnectionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="76" column="38" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/maven/mavenLib/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/JedisPoolConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -644,20 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/maven/mavenLib/org/springframework/data/spring-data-redis/1.8.6.RELEASE/spring-data-redis-1.8.6.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="80" column="38" lean-forward="true" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tcredit/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -703,6 +694,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tcredit/cache/RedisCacheConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring-service.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -710,37 +708,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/maven/mavenLib/org/springframework/data/spring-data-redis/1.8.6.RELEASE/spring-data-redis-1.8.6.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tcredit/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/maven/mavenLib/org/springframework/data/spring-data-redis/1.8.6.RELEASE/spring-data-redis-1.8.6.RELEASE.jar!/org/springframework/data/redis/connection/NamedNode.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/maven/mavenLib/org/springframework/data/spring-data-redis/1.8.6.RELEASE/spring-data-redis-1.8.6.RELEASE.jar!/org/springframework/data/redis/connection/jedis/JedisConnectionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/maven/mavenLib/org/springframework/data/spring-data-redis/1.8.6.RELEASE/spring-data-redis-1.8.6.RELEASE.jar!/org/springframework/data/redis/connection/RedisSentinelConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tcredit/service/StudentServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+        <state relative-caret-position="156">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tcredit/cache/RedisCacheConfig.java">
+    <entry file="jar://$USER_HOME$/maven/mavenLib/org/springframework/data/spring-data-redis/1.8.6.RELEASE/spring-data-redis-1.8.6.RELEASE.jar!/org/springframework/data/redis/connection/RedisNode.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring-redis.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        <state relative-caret-position="354">
+          <caret line="64" column="11" lean-forward="true" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/tcredit/test/MyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="22" />
+        <state relative-caret-position="246">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="22" />
         </state>
       </provider>
     </entry>

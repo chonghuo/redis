@@ -23,7 +23,9 @@
 	<bean id="valueSerializer" class="org.springframework.data.redis.serializer.JdkSerializationRedisSerializer"/>
 	<!--连接的是jedis客户端-->
 	<bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
-		<property name="hostName" value="172.19.162.164"/>
+		<constructor-arg name="sentinelConfig" ref="redisSentinelConfiguration"/>
+
+		<!--<property name="hostName" value="172.19.162.164"/>-->
 		<!--端口号默认为6379-->
 		  <!-- <property name="port" value="6379"/> -->
 		<!--有密码设置这个，无密码不需要设置-->
@@ -33,33 +35,39 @@
 	</bean>
 	<!-- 注册jedisPoolConfig -->
 	    <!-- <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig.JedisPoolConfig"/> -->
-	
-	<!-- 注册缓存注解驱动 -->
-	<cache:annotation-driven cache-manager="cacheManager"/>
-	
-	<!-- 注册缓存管理器 -->
-	<bean id="cacheManager" class="org.springframework.data.redis.cache.RedisCacheManager">
-		<!-- 构造注入Redis操作对象，即Redis模板 -->
-		<constructor-arg ref="redisTemplate"/>
-		<!-- 设置缓存区域名称 -->
-		<property name="cacheNames">
-			<list>
-				<value>realTimeCache</value>
-				<value>unRealTimeCache</value>
-			</list>
-		</property>
-		<!-- 为指定缓存区域设置生存时限，单位秒 -->
-		<property name="expires">
-			<map>
-				<!-- 为unRealTimeCache缓存区域中的key设置的生存时限为50秒 -->
-				<entry key="unRealTimeCache" value="50"/>
-			</map>
+	<bean id="redisSentinelConfiguration" class="org.springframework.data.redis.connection.RedisSentinelConfiguration">
+		<property name="master" ref="redisMaster"/>
+		<property name="sentinels">
+			<set>
+				<ref bean="sentinel1"/>
+				<ref bean="sentinel2"/>
+				<ref bean="sentinel3"/>
+
+			</set>
 		</property>
 	</bean>
 
-	<!--注册缓存配置对象-->
-	<bean class="com.tcredit.cache.RedisCacheConfig"></bean>
-	
+
+	 <!--注册redis主机-->
+	 <bean id = "redisMaster" class="org.springframework.data.redis.connection.RedisNode">
+		 <property name="name" value="mymaster"/>
+	 </bean>
+
+	<!--注册sentinel-->
+
+	<bean id="sentinel1" class="org.springframework.data.redis.connection.RedisNode">
+		<constructor-arg name="host" value="192.168.56.82"/>
+		<constructor-arg name="port" value="26379"/>
+	</bean>
+	<bean id="sentinel2" class="org.springframework.data.redis.connection.RedisNode">
+		<constructor-arg name="host" value="192.168.56.83"/>
+		<constructor-arg name="port" value="26379"/>
+	</bean>
+	<bean id="sentinel3" class="org.springframework.data.redis.connection.RedisNode">
+		<constructor-arg name="host" value="192.168.56.84"/>
+		<constructor-arg name="port" value="26379"/>
+	</bean>
+
 </beans>
 
 
